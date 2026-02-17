@@ -57,3 +57,13 @@ html {
 .btn-orange:hover {
   background-color: #d26004;
 }
+
+.btn-turquoise {
+  width: 35.9rem;
+  height: 7.4rem;
+  background-color: var(--color-turquoise);
+}
+
+.btn-turquoise:hover {
+  background-color: #05786e;
+}
