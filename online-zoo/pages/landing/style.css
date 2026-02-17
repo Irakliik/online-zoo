@@ -1,0 +1,59 @@
+:root {
+  --color-black: #000000;
+  --color-navy: #20113d;
+  --color-white: #ffffff;
+  --color-orange: #f58021;
+  --color-turquoise: #00a092;
+}
+
+html {
+  font-size: 10px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* UTILITY CLASSES */
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--color-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.btn div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-orange {
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 24rem;
+  height: 7.4rem;
+  background-color: var(--color-orange);
+}
+
+.btn-orange:hover {
+  background-color: #d26004;
+}
