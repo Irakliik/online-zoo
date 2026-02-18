@@ -47,8 +47,6 @@ html {
 }
 
 .btn-orange {
-  margin-top: 20px;
-  margin-left: 20px;
   width: 24rem;
   height: 7.4rem;
   background-color: var(--color-orange);
@@ -93,4 +91,87 @@ html {
 
 .btn-donation:hover div {
   background-color: #d26004;
+}
+
+/* //////////////////////// */
+
+.hamburger {
+  width: 30px;
+  height: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburger span {
+  height: 2.31px;
+  width: 100%;
+  background-color: #000;
+}
+
+.nav {
+  background-color: var(--color-orange);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 32px;
+}
+
+.logo {
+  width: 96px;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.hero__panda {
+  /* width: 100%; */
+}
+
+.hero {
+  padding: 0px 18px;
+  position: relative;
+  padding-bottom: 40px;
+}
+
+.hero__title {
+  margin-top: 30px;
+  font-size: 72px;
+  line-height: 100%;
+  font-weight: 800;
+  letter-spacing: 1%;
+  color: var(--color-turquoise);
+  text-transform: uppercase;
+}
+
+.hero__text {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 400px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: var(--color-black);
+}
+
+.hero__btn {
+  margin-top: 20px;
+}
+
+.hero__panda {
+  height: 387px;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image:
+    linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)),
+    url(../../assets/images/hero-panda.png);
+  background-position: bottom left;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -10;
 }
