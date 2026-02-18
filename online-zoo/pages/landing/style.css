@@ -67,3 +67,30 @@ html {
 .btn-turquoise:hover {
   background-color: #05786e;
 }
+
+.btn-donation {
+  margin-top: 20px;
+  margin-left: 20px;
+  padding-left: 10px;
+  width: 32rem;
+  height: 7.4rem;
+  justify-content: space-between;
+  background: transparent;
+  border: var(--color-white) solid 1px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.btn-donation div {
+  width: 8rem;
+  height: 100%;
+  background-color: var(--color-orange);
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.btn-donation:hover div {
+  background-color: #d26004;
+}
