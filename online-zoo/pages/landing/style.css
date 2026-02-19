@@ -104,6 +104,7 @@ html {
   justify-content: center;
   align-items: center;
   position: relative;
+  cursor: pointer;
 }
 
 .menu-icon,
@@ -149,14 +150,31 @@ html {
 }
 
 .cross-button {
+  background-color: transparent;
+  border: none;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
   position: absolute;
   top: 20px;
   right: 20px;
 }
 
+.cross-icon,
+.cross-icon::before,
+.cross-icon::after {
+  background-color: var(--color-white);
+  width: 30px;
+  height: 3px;
+  position: absolute;
+}
+
 .cross-icon::after,
 .cross-icon::before {
-  background-color: var(--color-white);
+  content: "";
 }
 .cross-icon {
   background-color: transparent;
@@ -184,6 +202,10 @@ html {
   justify-content: center;
   align-items: center;
   gap: 50px;
+}
+
+.nav__list li {
+  white-space: nowrap;
 }
 
 .logo {
