@@ -95,29 +95,95 @@ html {
 
 /* //////////////////////// */
 
-.hamburger {
-  width: 30px;
-  height: 22px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background: none;
+.menu-button {
+  background-color: transparent;
   border: none;
-  cursor: pointer;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
-.hamburger span {
-  height: 2.31px;
-  width: 100%;
-  background-color: #000;
+.menu-icon,
+.menu-icon::before,
+.menu-icon::after {
+  background-color: var(--color-black);
+  width: 30px;
+  height: 3px;
+  position: absolute;
 }
 
-.nav {
+.menu-icon::before,
+.menu-icon::after {
+  content: "";
+}
+
+.menu-icon::before {
+  transform: translate(-50%, -12px);
+}
+
+.menu-icon::after {
+  transform: translate(-50%, 12px);
+}
+
+.header {
   background-color: var(--color-orange);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 18px 32px;
+  position: relative;
+}
+
+.nav {
+  background-color: var(--color-navy);
+  position: absolute;
+  width: 50%;
+  top: 0;
+  left: 0;
+  height: 600px;
+  z-index: 1;
+  padding: 150px 95px;
+}
+
+.cross-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.cross-icon::after,
+.cross-icon::before {
+  background-color: var(--color-white);
+}
+.cross-icon {
+  background-color: transparent;
+}
+
+.cross-icon::before {
+  transform: translateX(-15px) rotate(45deg);
+}
+
+.cross-icon::after {
+  transform: translateX(-15px) rotate(-45deg);
+}
+
+.nav__list {
+  list-style: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0%;
+  color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
 }
 
 .logo {
@@ -126,10 +192,6 @@ html {
 
 .logo img {
   width: 100%;
-}
-
-.hero__panda {
-  /* width: 100%; */
 }
 
 .hero {
