@@ -136,6 +136,7 @@ html {
   align-items: center;
   padding: 18px 32px;
   position: relative;
+  height: 110px;
 }
 
 .nav {
@@ -277,6 +278,44 @@ html {
   /* bottom: 0; */
   left: 0;
   z-index: -10;
+}
+
+@media (min-width: 640px) {
+  .header {
+    height: auto;
+  }
+
+  .hero__title {
+    font-size: 72px;
+  }
+  .hero__text {
+    width: 60%;
+  }
+
+  .hero__btn {
+    width: 285px;
+    height: 74px;
+  }
+
+  .hero {
+    padding-bottom: 74px;
+  }
+
+  .hero__panda {
+    height: 387px;
+    background-size: 100%;
+    background-position: top left;
+    /* background-image:
+      linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 1),
+        rgba(255, 255, 255, 0)
+      ),
+      url(../../assets/images/hero-panda.png); */
+    bottom: 0;
+    left: 0;
+    z-index: -10;
+  }
 }
 
 @media (min-width: 1200px) {
