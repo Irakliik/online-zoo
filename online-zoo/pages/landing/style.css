@@ -161,6 +161,10 @@ html {
   gap: 25px;
   display: none;
 }
+
+.social {
+  width: 40px;
+}
 .social img {
   width: 100%;
   display: block;
@@ -305,13 +309,6 @@ html {
     height: 387px;
     background-size: 100%;
     background-position: top left;
-    /* background-image:
-      linear-gradient(
-        to bottom,
-        rgba(255, 255, 255, 1),
-        rgba(255, 255, 255, 0)
-      ),
-      url(../../assets/images/hero-panda.png); */
     bottom: 0;
     left: 0;
     z-index: -10;
@@ -326,13 +323,41 @@ html {
     display: none;
   }
 
+  .hero {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .hero__title {
+    font-size: 82px;
+  }
+
+  .hero__text {
+    width: 40%;
+  }
+
+  .hero__panda {
+    background-position: top;
+    background-size: 100%;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+
   .nav {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: transparent;
     position: static;
-    height: 100%;
+    height: auto;
     padding: 0;
     width: 100%;
+  }
+
+  .wrapper {
+    gap: 250px;
   }
 
   .nav__list {
