@@ -512,6 +512,119 @@ html {
   background-color: var(--color-white);
 }
 
+/* ====================================== */
+
+.pay-and-feed {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-navy);
+  text-align: center;
+  padding: 25px 0;
+}
+
+.pay-and-feed h2 {
+  font-size: 26px;
+  font-weight: 500;
+  color: var(--color-white);
+  text-transform: uppercase;
+}
+
+.pay-and-feed li article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.pay-and-feed li h3 {
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 130%;
+  letter-spacing: 0;
+  color: var(--color-white);
+}
+
+.pay-and-feed li p {
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: var(--color-white);
+}
+
+.pay-and-feed img {
+  width: 100%;
+}
+
+.step-header {
+  margin-top: 50px;
+  width: 100%;
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 130%;
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-white);
+  gap: 10px;
+}
+.step-header hr {
+  width: 100%;
+  background-color: var(--color-white);
+}
+.image {
+  margin-top: 25px;
+  width: 100%;
+}
+.image img {
+  border-radius: 5px;
+}
+
+.icon {
+  width: 106px;
+}
+
+.pay-and-feed button {
+  width: 100%;
+  margin-top: 20px;
+  background-color: var(--color-orange);
+  width: 95%;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  padding: 8px 0;
+  cursor: pointer;
+  color: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pay-and-feed button::after {
+  content: "";
+  background-image: url(../../assets/icons/arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30px;
+  height: 30px;
+  width: 30px;
+  background-color: var(--color-orange);
+  border-radius: 5px;
+}
+
+.pay-and-feed button:hover,
+.pay-and-feed button:hover::after {
+  background-color: var(--color-orange-hover);
+}
+
 @media (min-width: 640px) {
   .header {
     height: auto;
