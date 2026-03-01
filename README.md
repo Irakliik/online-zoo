@@ -1,1 +1,1 @@
-https://Irakliik.github.io/rsschool-cv/
+https://Irakliik.github.io/online-zoo/
