@@ -18,6 +18,10 @@ html {
   font-family: "Montserrat", sans-serif;
 }
 
+img {
+  width: 100%;
+}
+
 /* UTILITY CLASSES */
 
 .row {
@@ -623,6 +627,157 @@ html {
 .pay-and-feed button:hover,
 .pay-and-feed button:hover::after {
   background-color: var(--color-orange-hover);
+}
+
+/* ==================================== */
+
+.feedback {
+  background-color: var(--color-navy);
+  padding-top: 70px;
+  text-align: center;
+}
+.feedback__container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.feedback h2 {
+  font-weight: 500;
+  font-size: 26px;
+  text-transform: uppercase;
+  color: var(--color-white);
+}
+
+.feedback__p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  margin-top: 30px;
+  color: var(--color-white);
+}
+
+.feedback-slider__container {
+  margin-top: 45px;
+}
+
+.feedback-slider__container ul {
+  display: flex;
+  gap: 20px;
+  align-items: stretch;
+}
+
+.feedback-slider__card-item {
+  width: 95%;
+  border-radius: 5px;
+  background-color: var(--color-white);
+  color: var(--color-black);
+  margin: 0 auto;
+  padding: 20px 5px;
+  padding-bottom: 50px;
+  flex: 0 0 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback-slider__card-wrapper {
+  overflow: hidden;
+}
+
+.feedback-slider__card-item .quotes-image {
+  width: 92px;
+  height: 96px;
+  padding: 20px;
+  padding-bottom: 10px;
+}
+
+.feedback-slider__card-item h3 {
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 130%;
+}
+
+.feedback-slider__card-item p:first-of-type {
+  margin-top: 20px;
+  font-size: 26px;
+  line-height: 130%;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.feedback-slider__card-item .author {
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-top: auto;
+}
+
+.bullets {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.bullets label {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 1px solid var(--color-white);
+  background: transparent;
+  margin-right: 10px;
+}
+
+.bullets .bullet-active {
+  background: var(--color-white);
+}
+
+.feedback button {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  width: 100%;
+  margin: 0 auto;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: var(--color-white);
+  border: 1px solid var(--color-white);
+  padding: 8px;
+}
+
+.feedback button:hover {
+  background-color: var(--color-turquoise);
+}
+
+.feedback button::after {
+  content: "";
+
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+
+  background-color: var(--color-white);
+  mask-image: url(../../assets/icons/arrow.svg);
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: 28px;
+}
+
+.feedback__img {
+  margin-top: 40px;
+  width: 100%;
+  height: 400px;
+  background:
+    linear-gradient(to bottom, #20113d 0%, rgba(32, 17, 61, 0) 100%),
+    url(../../assets/images/testimonials-panda.png);
+
+  background-position: center left;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 @media (min-width: 640px) {
